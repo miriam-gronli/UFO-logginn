@@ -37,4 +37,11 @@ export class Liste {
        error => console.log(error)
       );
   };
+  // CHANGED to call logout backend and redirect
+  loggUt() {
+    this.http.post("api/observasjon/loggut", {})
+      .subscribe(success => {
+        this.router.navigate(['/']);
+      });
+  };
 }

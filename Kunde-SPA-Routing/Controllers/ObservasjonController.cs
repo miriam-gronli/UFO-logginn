@@ -38,8 +38,6 @@ namespace Kunde_SPA_Routing.Controllers
         [HttpPost]
         public async Task<ActionResult> Lagre(Observasjon innObservasjon)
         {
-            HttpContext.Session.SetString(_loggetInn, "LoggetInn");
-
             if (string.IsNullOrEmpty(HttpContext.Session.GetString(_loggetInn)))
             {
                 return Unauthorized("Ikke logget inn");
@@ -62,8 +60,6 @@ namespace Kunde_SPA_Routing.Controllers
         [HttpGet]
         public async Task<ActionResult> HentAlle()
         {
-            HttpContext.Session.SetString(_loggetInn, "LoggetInn");
-
             if (string.IsNullOrEmpty(HttpContext.Session.GetString(_loggetInn)))
             {
                 return Unauthorized("Ikke logget inn");
@@ -83,8 +79,6 @@ namespace Kunde_SPA_Routing.Controllers
         public async Task<ActionResult> Slett(int id)
         {
 
-            HttpContext.Session.SetString(_loggetInn, "LoggetInn");
-
             if (string.IsNullOrEmpty(HttpContext.Session.GetString(_loggetInn)))
             {
                 return Unauthorized("Ikke logget inn");
@@ -102,8 +96,6 @@ namespace Kunde_SPA_Routing.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult> HentEn(int id)
         {
-            HttpContext.Session.SetString(_loggetInn, "LoggetInn");
-
             if (string.IsNullOrEmpty(HttpContext.Session.GetString(_loggetInn)))
             {
                 return Unauthorized("Ikke logget inn");
@@ -126,8 +118,6 @@ namespace Kunde_SPA_Routing.Controllers
         [HttpPut]
         public async Task<ActionResult> Endre(Observasjon endreObservasjon)
         {
-            HttpContext.Session.SetString(_loggetInn, "LoggetInn");
-
             if (string.IsNullOrEmpty(HttpContext.Session.GetString(_loggetInn)))
             {
                 return Unauthorized("Ikke logget inn");
@@ -147,6 +137,8 @@ namespace Kunde_SPA_Routing.Controllers
             return BadRequest("Feil i inputvalidering på server");
         }
 
+        // CHANGED to logginn
+        [HttpPost("logginn")]
         public async Task<ActionResult> LoggInn(Bruker bruker)
         {
             if (ModelState.IsValid)
@@ -156,7 +148,8 @@ namespace Kunde_SPA_Routing.Controllers
                 {
                     _log.LogInformation("Innloggingen feilet for bruker " + bruker.Brukernavn);
                     HttpContext.Session.SetString(_loggetInn, "");
-                    return Ok(false);
+                    // CHANGED to Unauthorized
+                    return Unauthorized();
                 }
                 HttpContext.Session.SetString(_loggetInn, "LoggetInn");
                 return Ok(true);
@@ -165,9 +158,14 @@ namespace Kunde_SPA_Routing.Controllers
             return BadRequest("Feil i inputvalidering på server");
         }
 
-        public void LoggUt()
+        // CHANGED to loggut
+        [HttpPost("loggut")]
+        // CHANGED to Task<ActionResult> 
+        public async Task<ActionResult> LoggUt()
         {
             HttpContext.Session.SetString(_loggetInn, "");
+            // CHANGED to return
+            return Ok(true);
         }
     }
 }
