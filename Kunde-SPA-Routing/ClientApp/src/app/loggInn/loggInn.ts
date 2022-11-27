@@ -33,32 +33,15 @@ export class LoggInn {
     bruker.brukernavn = this.skjema_loggInn.value.brukernavn;
     bruker.passord = this.skjema_loggInn.value.passord;
 
-    if (bruker.brukernavn === "Admin" && bruker.passord === "Test11") {
-      this.router.navigate(['/liste']);
+        // CHANGED to logginn
+    this.http.post("api/observasjon/logginn", bruker)
+      .subscribe(success => {
+         this.router.navigate(['/liste']);
+      }, error => {
 
-      error => console.log(error);
-    }
-
-    /*
-    this.http.post("api/bruker", bruker)
-      .subscribe(retur => {
-        this.router.navigate(['/liste']);
-      },
-        error => console.log(error)
-      ); */
-
-    /*
-    this.http.post("API/EstablishAdministarator", bruker)
-      .subscribe(body => {}, response => {
-
-      if (response.status === 200) {
-        this.router.navigate(['/Liste']);
-      }
-
-      if (response.status === 400) {
+      if (error.status === 401) {
         this.alertContent = "Kunne ikke autentisere, sjekk brukernavn og passord."
       }
-      });
-    */
+     });
   }
 }

@@ -140,6 +140,11 @@ namespace Kunde_SPA_Routing.DAL
             {
                 Brukere funnetBruker = await _db.Brukere.FirstOrDefaultAsync(b => b.Brukernavn == bruker.Brukernavn);
                 // sjekk passordet
+                // CHANGED early return if no user found
+                if (funnetBruker == null)
+                {
+                    return false;
+                }
                 byte[] hash = LagHash(bruker.Passord, funnetBruker.Salt);
                 bool ok = hash.SequenceEqual(funnetBruker.Passord);
                 if (ok)

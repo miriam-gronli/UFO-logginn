@@ -5,7 +5,8 @@
   <div>
     <div class="col-md-12">
       <div *ngIf="laster">Laster Observasjoner.....</div>
-      <span><button class="btn btn-primary" routerLink="/loggInn">Logg ut</button></span>
+      <!-- CHANGED to call angular fn -->
+      <span><button class="btn btn-primary" (click)="loggUt()">Logg ut</button></span>
       <!--
       <table class="table table-bordered table-condensed">
           <thead>
