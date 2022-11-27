@@ -190,3 +190,5 @@ System.InvalidOperationException: No authenticationScheme was specified, and the
 2022-11-27T14:19:09.7555558+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
 2022-11-27T14:19:09.7565802+01:00  [INF] Hosting environment: "Development" (c3307c92)
 2022-11-27T14:19:09.7574526+01:00  [INF] Content root path: "C:\Users\dawes\Projects\UFO-logginn\Kunde-SPA-Routing" (b5d60022)
+2022-11-27T14:26:20.0759106+01:00 0HMMGF7S151P4:000001A7 [INF] Innloggingen feilet for bruker agdsfh (11fda3b7)
+2022-11-27T14:26:48.6891523+01:00 0HMMGF7S151P4:000001A9 [INF] Innloggingen feilet for bruker agdsfh (11fda3b7)
