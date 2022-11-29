@@ -316,7 +316,7 @@ namespace UfoTest
 
             // Assert 
             Assert.Equal((int)HttpStatusCode.OK, resultat.StatusCode);
-            Assert.Equal("Observasjon slettet", resultat.Value);
+            Assert.Equal("", resultat.Value);
         }
 
 
@@ -503,11 +503,11 @@ namespace UfoTest
             obsController.ControllerContext.HttpContext = mockHttpContext.Object;
 
             // Act
-            var resultat = await obsController.LoggInn(returBruker) as OkObjectResult;
+            var resultat = await obsController.LoggInn(returBruker) as UnauthorizedObjectResult;
 
             // Assert 
-            Assert.Equal((int)HttpStatusCode.OK, resultat.StatusCode);
-            Assert.False((bool)resultat.Value);
+            Assert.Equal((int)HttpStatusCode.Unauthorized, resultat.StatusCode);
+            Assert.Equal("Logget ikke inn", resultat.Value);         
         }
 
         //Logg Inn Input Feil

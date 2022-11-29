@@ -1,0 +1,85 @@
+﻿<Properties StartupConfiguration="{ACB74181-4626-457D-8F75-254055E59D08}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Kunde-SPA-Routing/Controllers/ObservasjonController.cs">
+    <Files>
+      <File FileName="Kunde-SPA-Routing/Controllers/ObservasjonController.cs" Line="1" Column="1" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/app/liste/liste.ts" />
+      <File FileName="UfoTest/ObservasjonControllerTest.cs" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/app/app-routing.module.ts" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/app/loggInn/loggInn.html" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/app/lagre/lagre.ts" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/app/lagre/lagre.html" />
+      <File FileName="Kunde-SPA-Routing/DAL/IObservasjonRepository.cs" />
+      <File FileName="Kunde-SPA-Routing/DAL/DBInit.cs" />
+      <File FileName="Kunde-SPA-Routing/DAL/ObservasjonContekst.cs" />
+      <File FileName="Kunde-SPA-Routing/DAL/ObservasjonRepository.cs" />
+      <File FileName="Kunde-SPA-Routing/Model/Bruker.cs" />
+      <File FileName="Kunde-SPA-Routing/Model/Observasjon.cs" />
+      <File FileName="Kunde-SPA-Routing/appsettings.json" />
+      <File FileName="Kunde-SPA-Routing/.gitignore" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/app/endre/endre.html" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/app/endre/endre.ts" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/app/app.component.html" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/app/app.component.ts" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/app/app.module.ts" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/app/Bruker.ts" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/app/Bruker.js" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/app/Observasjon.ts" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/index.html" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/karma.conf.js" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/main.ts" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/main.js" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/main.js.map" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/polyfills.ts" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/test.ts" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/styles.css" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/tsconfig.app.json" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/tsconfig.server.json" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/tsconfig.spec.json" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/src/tslint.json" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/.editorconfig" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/.gitignore" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/angular.json" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/browserslist" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/package.json" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/tsconfig.json" />
+      <File FileName="Kunde-SPA-Routing/ClientApp/tslint.json" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Kunde-SPA-Routing" expanded="True">
+            <Node name="Kunde-SPA-Routing" expanded="True">
+              <Node name="ClientApp" expanded="True">
+                <Node name="src" expanded="True">
+                  <Node name="app" expanded="True">
+                    <Node name="endre" expanded="True" />
+                    <Node name="lagre" expanded="True" />
+                    <Node name="liste" expanded="True" />
+                    <Node name="loggInn" expanded="True" />
+                    <Node name="Bruker.ts" expanded="True" />
+                  </Node>
+                  <Node name="main.ts" expanded="True">
+                    <Node name="main.js" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Controllers" expanded="True">
+                <Node name="ObservasjonController.cs" selected="True" />
+              </Node>
+              <Node name="DAL" expanded="True" />
+              <Node name="Model" expanded="True" />
+            </Node>
+            <Node name="UfoTest" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Kunde-SPA-Routing PreferredExecutionTarget="/Applications/Safari.app" />
+</Properties>
